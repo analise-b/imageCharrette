@@ -1,0 +1,344 @@
+html {
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #CABB76;
+    height: 100vh;
+    padding-top: 110px;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+header {
+    top: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    background-color: #CABB76;
+    z-index: 1000;
+    border-bottom: 2px solid #000000;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    gap: 5px;
+    text-align: center;
+}
+
+.button {
+    padding: 10px 15px;
+    background: linear-gradient(#916528, #91642B);
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sub {
+    font-size: 0.3rem;
+    color: #000000;
+    margin: 0;
+    text-align: center;
+    padding: 0px;
+
+}
+
+.instructions p,
+#wait,
+#sigh,
+#who,
+#uh,
+#spin {
+    font-size: 0.7rem;
+    margin: 0 auto;
+    text-align: center;
+    color: #000000;
+    padding: 5px;
+}
+
+.napoleon,
+.napoleonSpam1,
+.napoleonSpam2,
+.napoleonSpam3,
+.napoleonSpam4,
+.napoleonSpam5 {
+    background-image: url("images/napoleon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: all 0.6s ease;
+}
+
+#adam1 {
+    background-image: url("images/adam1.png");
+    width: 300px;
+    height: 300px;
+    left: 32%;
+    top: 15%;
+}
+
+#adam2 {
+    background-image: url("images/adam2.png");
+    width: 200px;
+    height: 200px;
+    left: 35%;
+    top: 25%;
+
+}
+
+.opacity,
+.mouse,
+.mouseMove,
+.space {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+#napoleonDark {
+    opacity: 0;
+}
+
+.nap {
+    background-image: url("images/napoleon1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+#napoleonPixel {
+    background-image: url("images/napoleonPixel.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+.napoleonRandom {
+    background-image: url("images/napoleon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    z-index: 0;
+    opacity: 0;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+}
+
+.napoleonSpin {
+    background-image: url("images/napoleon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    z-index: 0;
+    animation: spin 3s linear infinite;
+    opacity: 0;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.napoleonGrey {
+    background-image: url("images/napoleonGrey.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
+    z-index: 0;
+    transition: all 1.5s ease;
+}
+
+.napoleonZoom {
+    background-image: url("images/napoleon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200%;
+    height: 200%;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+#body13 {
+    height: 600vh;
+}
+
+.napoleonSmall {
+    background-image: url("images/napoleon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 5%;
+    height: 5%;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+.napoleonCheck {
+    background-image: url("images/checkers.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
+    z-index: 0;
+    position: absolute;
+    transition: all 1.5s ease;
+    margin-top: 2%;
+}
+
+.napoleonSpam1,
+.napoleonSpam2,
+.napoleonSpam3,
+.napoleonSpam4,
+.napoleonSpam5 {
+    opacity: 0;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+}
+
+.napoleonScroll {
+    background-image: url("images/napoleon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
+    z-index: 0;
+    opacity: 0;
+}
+
+.napoleonBlur {
+    background-image: url("images/napoleon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
+    z-index: 0;
+    filter: blur(10px);
+}
+
+.napoleonSpinner {
+    background-image: url("images/napoleon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
+    z-index: 0;
+    opacity: 0;
+}
+
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin: -20px 0 0 -20px;
+    border: 4px solid #ccc;
+    border-top: 4px solid #333;
+    border-radius: 50%;
+    animation: spinner 1s linear infinite;
+    z-index: 2;
+    background: transparent;
+  }
+  
+
+  @keyframes spinner {
+    to { transform: rotate(360deg); }
+  }
+
+#body20 {
+    background-color: #FFFFFF;
+    z-index: 0;
+}
+
+.napoleonBackground {
+    background-color: #CABB76;
+    width: 38%;
+    height: 80%;
+    margin: 0 auto;
+    z-index: 1;
+    opacity: 0;
+}
