@@ -94,6 +94,13 @@ a {
     padding: 5px;
 }
 
+.instructionsMain p {
+    font-size: 3.5rem;
+    margin: 0 auto;
+    text-align: center;
+    color: #000000;
+}
+
 .napoleon,
 .napoleonSpam1,
 .napoleonSpam2,
